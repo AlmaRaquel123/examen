@@ -1,0 +1,146 @@
+<!DOCTYPE -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+	<!--link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css"-->
+	<script type="text/javascript" src="js/jQuery.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript">
+		//alert("valor de la suma es: ");
+		$(document).ready (function (){
+		alert("valor de la suma es: ");
+
+				/*$("#btnSumar").click(function(){
+					var n1=parseInt($("#num1").val());
+					var n2=parseInt($("#num2").val());
+					var suma=n1+n2;
+					$("#res").val(suma);
+					alert("valor de la suma es: "+suma);
+
+				});
+				$("#btnResta").click(function(){
+					var n1=parseInt($("#num1").val());
+					var n2=parseInt($("#num2").val());
+					var resta=n1-n2;
+					$("#res").val(resta);
+				alert("valor de la resta es: "+resta);
+				});
+				$("#btnMultiplicacion").click(function(){
+					var n1=parseInt($("#num1").val());
+					var n2=parseInt($("#num2").val());
+					var multi=n1*n2;
+					$("#res").val(multi);
+				alert("valor de la multiplicacion es: "+multi);
+				});
+				$("#btnDivicion").click(function(){
+					var n1=parseInt($("#num1").val());
+					var n2=parseInt($("#num2").val());
+					var div=n1/n2;
+					$("#res").val(div);
+				alert("valor de la division es: "+div);
+				});
+				
+				$("#btnFibo").click(function(){
+					var n1=parseInt($("#num1").val());
+					var n2=parseInt($("#num2").val());
+					int a=0, b=0;
+					for(i=0;i<15,i++)
+					{
+						c=a+b;
+						a=b;
+						b=c;
+					}
+					$("#resul").val(fibo);
+				});*/
+				$("#btnSumar").click(function(){
+				var n1=parseInt($("#num1").val());
+				var n2=parseInt($("#num2").val());
+				var suma=n1+n2;
+			
+				$("#res").val(suma);
+			});
+				$("#btnResta").click(function(){
+				var n1=parseInt($("#num1").val());
+				var n2=parseInt($("#num2").val());
+				var resta=n1-n2;
+			
+				$("#res").val(resta);
+			});
+
+				$("#btnMultiplicacion").click(function(){
+					var n1=parseInt($("#num1").val());
+					var n2=parseInt($("#num2").val());
+					var multi=n1*n2;
+					$("#res").val(multi);
+				
+				});
+					$("#btnDivicion").click(function(){
+					var n1=parseInt($("#num1").val());
+					var n2=parseInt($("#num2").val());
+					var div=n1/n2;
+					$("#res").val(div);
+
+				});
+		});
+	</script>
+	
+</head>
+<body>
+	<div data-role="page" id="Principal" >
+		<div data-role="header">
+			
+			<p>Principal</p>
+
+		</div>
+		<div data-role="content">
+		<a href="#Suma" data-role="button" >Operaciones basicas</a>
+		<a href="#Fibo" data-role="button">Serie Fibonacci</a>
+		<a href="#Contacto" data-role="button" >Datos del desarrollador</a>
+			
+		
+		</div>
+	</div>
+	<div data-role="page" id="Contacto" > <!--Tercer interfaz-->
+		<div data-role="header">
+			<a href="#Principal" ">Principal</a>
+			
+		</div>
+		<div data-role="content">
+			<p>Alma Raquel Barrera Rosales</p>
+			<p>rdsm.7.7.7@gmail.com</p>
+			<p>13940277</p>
+			<p>2761070615</p>
+			<p>Bases De Datos Para Dispositivos Moviles</p>
+		</div>
+	</div>
+	<div data-role="page" id="Suma" >
+
+		<div data-role="content">
+			<input type="text" id="num1" placeholder="Escribe un número">
+			<input type="text" id="num2" placeholder="Escribe un número">
+			<input type="text" id="res" placeholder="Resultado">
+			<input type="button" id="btnSumar" value="Calcular suma">
+			<input type="button" id="btnResta" value="Calcular resta">
+			<input type="button" id="btnMultiplicacion" value="Calcular multiplicacion">
+			<input type="button" id="btnDivicion" value="Calcular divicion">
+
+		</div>
+		<div data-role="footer">
+			<p>Pie de la aplicacion</p>
+		</div>
+	</div>
+	<div data-role="page" id="Fibo" "> <!--Tercera interfaz-->
+
+		<div data-role="content">
+			<input type="text" id="num11" placeholder="Escribe un número">
+			<input type="text" id="resul" placeholder="Resultado">
+			<input type="button" id="btnFibo" value="Calcular serie Fibonacci">
+		</div>
+		<div data-role="footer">
+			<p>Pie de la app</p>
+		</div>
+	</div>
+</body>
+</html>
